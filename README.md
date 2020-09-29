@@ -50,18 +50,13 @@ int result = 3
   .Pipe(multiplyByTwo) // result == 8
 ```
 
-## IfNotNull method in C#
-
-Similar to the `|>` operator but stops at soon as one input is null down the chain.
-
 
 # Roadmap
 
 - [x] Compose method
 - [x] Pipe method
-- [ ] IfNotNull method
 
 # C# concepts
 
-- [ ] Generics
-- [ ] Extension methods
+- [x] Generics
+- [x] Extension methods
