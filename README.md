@@ -45,9 +45,9 @@ let result = 3
 Func<int,int> addOne = (int x) => x + 1;
 Func<int,int> multiplyByTwo = (int x) => 2*x;
 
-Func<int,int> combin = 3
+int result = 3
   .Pipe(addOne)
-  .Pipe(multiplyByTwo)
+  .Pipe(multiplyByTwo) // result == 8
 ```
 
 ## IfNotNull method in C#
@@ -58,7 +58,7 @@ Similar to the `|>` operator but stops at soon as one input is null down the cha
 # Roadmap
 
 - [x] Compose method
-- [ ] Pipe method
+- [x] Pipe method
 - [ ] IfNotNull method
 
 # C# concepts

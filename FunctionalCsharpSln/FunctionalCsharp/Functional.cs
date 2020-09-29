@@ -16,6 +16,15 @@ namespace FunctionalCsharp
             return (T x) => g(ConvertValue<V,U>(f(x)));
         }
 
+        /// <summary>
+        /// Given a function f : U -> V and a value v of type T, compute f(v)
+        /// Assumption : there is a valid conversion from T to U.
+        /// </summary>
+        public static V Pipe<T, U, V>(this T v, Func<U, V> f)
+        {
+            return f(ConvertValue<U, T>(v));
+        }
+
         private static T ConvertValue<T, U>(U value)
         {
             return (T)Convert.ChangeType(value, typeof(T));
