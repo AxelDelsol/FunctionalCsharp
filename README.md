@@ -57,7 +57,7 @@ Similar to the `|>` operator but stops at soon as one input is null down the cha
 
 # Roadmap
 
-- [ ] Compose method
+- [x] Compose method
 - [ ] Pipe method
 - [ ] IfNotNull method
 
